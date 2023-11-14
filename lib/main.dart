@@ -3138,14 +3138,10 @@ class _MyHomeState extends State<MyHome> {
             ),
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(
-              bottom: MediaQuery.of(context).size.height * 0.018),
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.0825,
-            height: 0.25,
-            color: kTextGrey,
-          ),
+        Container(
+          width: MediaQuery.of(context).size.width * 0.0825,
+          height: 0.25,
+          color: kTextGrey,
         ),
       ],
     );
