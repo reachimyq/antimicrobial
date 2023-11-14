@@ -382,9 +382,11 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const AutoSizeText(
-          'Patient Details',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        Container(
+          child: const AutoSizeText(
+            'Patient Details',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         SizedBoxH(height: 10),
         BorderBox(

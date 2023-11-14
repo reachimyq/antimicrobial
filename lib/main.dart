@@ -1530,8 +1530,7 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Image.asset(
-                                                                'images/right_triangle.png'),
+                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
                                                           ),
                                                         );
                                                       }),
@@ -1545,31 +1544,21 @@ class _MyHomeState extends State<MyHome> {
                                                             (15 / 1180),
                                                   ),
                                                   // Explanation
-                                                  SizedBox(
-                                                    width:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            (70 / 632),
-                                                    height:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .height *
-                                                            (40 / 1180),
+                                                  Container(
                                                     child: Container(
                                                       //color: Colors.orange,
                                                       width:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .width *
-                                                              0.1,
+                                                              0.11,
                                                       height:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .height *
-                                                              0.05,
+                                                              0.043,
                                                       child: const AutoSizeText(
-                                                        'Patient remains unwell after 48 hours of antimicrobial therapy',
+                                                        'Patient remains unwell after 48 hours of therapy',
                                                         style: TextStyle(
                                                             color: kdarkGrey,
                                                             fontSize: 12,
@@ -1708,7 +1697,7 @@ class _MyHomeState extends State<MyHome> {
                                                     ),
                                                     StatefulBuilder(builder:
                                                         (context, setState) {
-                                                      return SizedBox(
+                                                      return Container(
                                                         height: MediaQuery.of(
                                                                     context)
                                                                 .size
@@ -1912,8 +1901,7 @@ class _MyHomeState extends State<MyHome> {
                                                                       .resolveWith(
                                                                           (states) =>
                                                                               kdarkGrey)),
-                                                          child: Image.asset(
-                                                              'images/right_triangle.png'),
+                                                          child: Icon(Icons.arrow_right, color: Colors.white,),
                                                         ),
                                                       );
                                                     }),
@@ -1926,27 +1914,20 @@ class _MyHomeState extends State<MyHome> {
                                                       (15 / 1180),
                                                 ),
                                                 // Explanation
-                                                SizedBox(
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      (70 / 632),
-                                                  height: MediaQuery.of(context)
-                                                          .size
-                                                          .height *
-                                                      (40 / 1180),
+                                                Container(
+
                                                   child: Container(
                                                     //color: Colors.orange,
                                                     width:
                                                         MediaQuery.of(context)
                                                                 .size
                                                                 .width *
-                                                            0.1,
+                                                            0.12,
                                                     height:
                                                         MediaQuery.of(context)
                                                                 .size
                                                                 .height *
-                                                            0.05,
+                                                            0.043,
                                                     child: const AutoSizeText(
                                                       'On nephrotoxic antimicrobials with declining eGFR',
                                                       style: TextStyle(
@@ -1971,18 +1952,6 @@ class _MyHomeState extends State<MyHome> {
                                       ),
                                       GestureDetector(
                                         onTap: () async {},
-                                        // child: DashButton(
-                                        //   title: 'Afebrile',
-                                        //   explanation:
-                                        //       '48 hrs of antimicrobials but never had a fever',
-                                        //   location: 'afebrile_icon.png',
-                                        //   number: 7,
-                                        //   colour: kGreen,
-                                        //   child: createTable(
-                                        //       'Afebrile Patients',
-                                        //       'The following patients have been on antibiotics from admission and have not had an episode of fever or hypothermia throughout',
-                                        //       3),
-                                        // ),
                                         child: Container(
                                           // height: MediaQuery.of(context).size.height * (height / 844),
                                           // width: MediaQuery.of(context).size.width * (width / 390),
@@ -2310,8 +2279,7 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Image.asset(
-                                                                'images/right_triangle.png'),
+                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
                                                           ),
                                                         );
                                                       }),
@@ -2325,29 +2293,29 @@ class _MyHomeState extends State<MyHome> {
                                                             (15 / 1180),
                                                   ),
                                                   // Explanation
-                                                  SizedBox(
-                                                    width:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            (70 / 632),
-                                                    height:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .height *
-                                                            (40 / 1180),
+                                                  Container(
+                                                    // width:
+                                                    //     MediaQuery.of(context)
+                                                    //             .size
+                                                    //             .width *
+                                                    //         (70 / 632),
+                                                    // height:
+                                                    //     MediaQuery.of(context)
+                                                    //             .size
+                                                    //             .height *
+                                                    //         (40 / 1180),
                                                     child: Container(
                                                       //color: Colors.orange,
                                                       width:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .width *
-                                                              0.1,
+                                                              0.12,
                                                       height:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .height *
-                                                              0.05,
+                                                              0.043,
                                                       child: const AutoSizeText(
                                                         '48 hrs of antimicrobials but never had a fever',
                                                         style: TextStyle(
@@ -2712,8 +2680,7 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Image.asset(
-                                                                'images/right_triangle.png'),
+                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
                                                           ),
                                                         );
                                                       }),
@@ -2727,31 +2694,31 @@ class _MyHomeState extends State<MyHome> {
                                                             (15 / 1180),
                                                   ),
                                                   // Explanation
-                                                  SizedBox(
-                                                    width:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            (70 / 632),
-                                                    height:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .height *
-                                                            (40 / 1180),
+                                                  Container(
+                                                    // width:
+                                                    //     MediaQuery.of(context)
+                                                    //             .size
+                                                    //             .width *
+                                                    //         (70 / 632),
+                                                    // height:
+                                                    //     MediaQuery.of(context)
+                                                    //             .size
+                                                    //             .height *
+                                                    //         (40 / 1180),
                                                     child: Container(
                                                       //color: Colors.orange,
                                                       width:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .width *
-                                                              0.1,
+                                                              0.123,
                                                       height:
                                                           MediaQuery.of(context)
                                                                   .size
                                                                   .height *
-                                                              0.05,
+                                                              0.043,
                                                       child: const AutoSizeText(
-                                                        'Patient on intravenous antibiotics suitable for oral switch',
+                                                        'Patient on intravenous antibiotics suitable for orals',
                                                         style: TextStyle(
                                                             color: kdarkGrey,
                                                             fontSize: 12,
@@ -2922,6 +2889,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -2931,8 +2899,8 @@ class _MyHomeState extends State<MyHome> {
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 Container(
                     //color: Colors.orange,
-                    width: MediaQuery.of(context).size.width * 0.009,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    width: MediaQuery.of(context).size.width * 0.01,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[0],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -2955,6 +2923,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -2964,8 +2933,8 @@ class _MyHomeState extends State<MyHome> {
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 Container(
                     //color: Colors.orange,
-                    width: MediaQuery.of(context).size.width * 0.009,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    width: MediaQuery.of(context).size.width * 0.01,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[1],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -2988,6 +2957,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -2997,8 +2967,8 @@ class _MyHomeState extends State<MyHome> {
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 Container(
                     //color: Colors.orange,
-                    width: MediaQuery.of(context).size.width * 0.009,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    width: MediaQuery.of(context).size.width * 0.01,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[2],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3021,6 +2991,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -3031,7 +3002,7 @@ class _MyHomeState extends State<MyHome> {
                 Container(
                     //color: Colors.orange,
                     width: MediaQuery.of(context).size.width * 0.006,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[3],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3054,6 +3025,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -3064,7 +3036,7 @@ class _MyHomeState extends State<MyHome> {
                 Container(
                     //color: Colors.orange,
                     width: MediaQuery.of(context).size.width * 0.006,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[4],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3087,6 +3059,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -3097,7 +3070,7 @@ class _MyHomeState extends State<MyHome> {
                 Container(
                     //color: Colors.orange,
                     width: MediaQuery.of(context).size.width * 0.006,
-                    height: MediaQuery.of(context).size.height * 0.025,
+                    height: MediaQuery.of(context).size.height * 0.0175,
                     child: AutoSizeText(values[5],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3120,6 +3093,7 @@ class _MyHomeState extends State<MyHome> {
           child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     //color: Colors.green,
@@ -3130,7 +3104,7 @@ class _MyHomeState extends State<MyHome> {
                 Container(
                   //color: Colors.orange,
                   width: MediaQuery.of(context).size.width * 0.006,
-                  height: MediaQuery.of(context).size.height * 0.025,
+                  height: MediaQuery.of(context).size.height * 0.0175,
                   child: AutoSizeText(values[6],
                       style: const TextStyle(fontWeight: FontWeight.bold)),
                 ),
