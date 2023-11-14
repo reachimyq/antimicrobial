@@ -644,11 +644,17 @@ class _MyHomeState extends State<MyHome> {
                                 width:
                                     MediaQuery.of(context).size.width * 0.005,
                               ),
-                              AutoSizeText('MENU',
-                                  style: TextStyle(
-                                      color: menuTColor,
-                                      fontSize: 16,
-                                      fontFamily: 'Helvetica')),
+                              Container(
+                                //color: Colors.orange,
+                                width: MediaQuery.of(context).size.width * 0.03,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.03,
+                                child: AutoSizeText('MENU',
+                                    style: TextStyle(
+                                        color: menuTColor,
+                                        fontSize: 16,
+                                        fontFamily: 'Helvetica')),
+                              ),
                             ],
                           ),
                         ),
