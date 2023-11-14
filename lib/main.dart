@@ -607,6 +607,9 @@ class _MyHomeState extends State<MyHome> {
                           width: MediaQuery.of(context).size.width * 0.019,
                         ),
                         Container(
+                          //color: Colors.orange,
+                          width: MediaQuery.of(context).size.width * 0.07,
+                          height: MediaQuery.of(context).size.height * 0.075,
                           child: const AutoSizeText(
                             'AMS\nGuardian',
                             style: TextStyle(
@@ -1032,7 +1035,8 @@ class _MyHomeState extends State<MyHome> {
                                   const Padding(
                                     padding: EdgeInsets.only(
                                         left: 90.0, top: 25.0, bottom: 10.0),
-                                    child: AutoSizeText('Prescriptions Run Chart',
+                                    child: AutoSizeText(
+                                        'Prescriptions Run Chart',
                                         style: TextStyle(
                                             color: kGreen,
                                             fontFamily: 'Helvetica',
@@ -3039,13 +3043,16 @@ class _MyHomeState extends State<MyHome> {
                                                     'Muhammad Khan') {}
                                           },
                                           cells: [
-                                            DataCell(AutoSizeText('${item['mrn']}')),
-                                            DataCell(AutoSizeText(item['name'])),
                                             DataCell(
-                                                AutoSizeText('${item['location']}')),
-                                            DataCell(AutoSizeText('${item['bed']}')),
+                                                AutoSizeText('${item['mrn']}')),
                                             DataCell(
-                                                AutoSizeText('${item['duration']}')),
+                                                AutoSizeText(item['name'])),
+                                            DataCell(AutoSizeText(
+                                                '${item['location']}')),
+                                            DataCell(
+                                                AutoSizeText('${item['bed']}')),
+                                            DataCell(AutoSizeText(
+                                                '${item['duration']}')),
                                           ],
                                         );
                                       }).toList()
@@ -3098,13 +3105,14 @@ class _MyHomeState extends State<MyHome> {
                                                 });
                                               },
                                               cells: [
+                                                DataCell(AutoSizeText(
+                                                    '${item['mrn']}')),
                                                 DataCell(
-                                                    AutoSizeText('${item['mrn']}')),
-                                                DataCell(AutoSizeText(item['name'])),
+                                                    AutoSizeText(item['name'])),
                                                 DataCell(AutoSizeText(
                                                     '${item['location']}')),
-                                                DataCell(
-                                                    AutoSizeText('${item['bed']}')),
+                                                DataCell(AutoSizeText(
+                                                    '${item['bed']}')),
                                                 DataCell(AutoSizeText(
                                                     '${item['duration']}')),
                                               ],
@@ -3135,14 +3143,14 @@ class _MyHomeState extends State<MyHome> {
                                                     });
                                                   },
                                                   cells: [
-                                                    DataCell(
-                                                        AutoSizeText('${item['mrn']}')),
-                                                    DataCell(
-                                                        AutoSizeText(item['name'])),
+                                                    DataCell(AutoSizeText(
+                                                        '${item['mrn']}')),
+                                                    DataCell(AutoSizeText(
+                                                        item['name'])),
                                                     DataCell(AutoSizeText(
                                                         '${item['location']}')),
-                                                    DataCell(
-                                                        AutoSizeText('${item['bed']}')),
+                                                    DataCell(AutoSizeText(
+                                                        '${item['bed']}')),
                                                     DataCell(AutoSizeText(
                                                         '${item['duration']}')),
                                                   ],
@@ -3176,8 +3184,8 @@ class _MyHomeState extends State<MyHome> {
                                                       cells: [
                                                         DataCell(AutoSizeText(
                                                             '${item['mrn']}')),
-                                                        DataCell(
-                                                            AutoSizeText(item['name'])),
+                                                        DataCell(AutoSizeText(
+                                                            item['name'])),
                                                         DataCell(AutoSizeText(
                                                             '${item['location']}')),
                                                         DataCell(AutoSizeText(
@@ -3266,17 +3274,22 @@ class _MyHomeState extends State<MyHome> {
                                                                 });
                                                               },
                                                               cells: [
-                                                                DataCell(AutoSizeText(
-                                                                    '${item['mrn']}')),
-                                                                DataCell(AutoSizeText(
-                                                                    item[
-                                                                        'name'])),
-                                                                DataCell(AutoSizeText(
-                                                                    '${item['location']}')),
-                                                                DataCell(AutoSizeText(
-                                                                    '${item['bed']}')),
-                                                                DataCell(AutoSizeText(
-                                                                    '${item['duration']}')),
+                                                                DataCell(
+                                                                    AutoSizeText(
+                                                                        '${item['mrn']}')),
+                                                                DataCell(
+                                                                    AutoSizeText(
+                                                                        item[
+                                                                            'name'])),
+                                                                DataCell(
+                                                                    AutoSizeText(
+                                                                        '${item['location']}')),
+                                                                DataCell(
+                                                                    AutoSizeText(
+                                                                        '${item['bed']}')),
+                                                                DataCell(
+                                                                    AutoSizeText(
+                                                                        '${item['duration']}')),
                                                               ],
                                                             );
                                                           }).toList()
@@ -3313,17 +3326,21 @@ class _MyHomeState extends State<MyHome> {
                                                                     });
                                                                   },
                                                                   cells: [
-                                                                    DataCell(AutoSizeText(
-                                                                        '${item['mrn']}')),
-                                                                    DataCell(AutoSizeText(
-                                                                        item[
-                                                                            'name'])),
-                                                                    DataCell(AutoSizeText(
-                                                                        '${item['location']}')),
-                                                                    DataCell(AutoSizeText(
-                                                                        '${item['bed']}')),
-                                                                    DataCell(AutoSizeText(
-                                                                        '${item['duration']}')),
+                                                                    DataCell(
+                                                                        AutoSizeText(
+                                                                            '${item['mrn']}')),
+                                                                    DataCell(
+                                                                        AutoSizeText(
+                                                                            item['name'])),
+                                                                    DataCell(
+                                                                        AutoSizeText(
+                                                                            '${item['location']}')),
+                                                                    DataCell(
+                                                                        AutoSizeText(
+                                                                            '${item['bed']}')),
+                                                                    DataCell(
+                                                                        AutoSizeText(
+                                                                            '${item['duration']}')),
                                                                   ],
                                                                 );
                                                               }).toList()
