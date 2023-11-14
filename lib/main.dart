@@ -829,7 +829,7 @@ class _MyHomeState extends State<MyHome> {
                               fontFamily: 'Helvetica')),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.58,
+                      width: MediaQuery.of(context).size.width * 0.55,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
@@ -837,7 +837,7 @@ class _MyHomeState extends State<MyHome> {
                       children: [
                         Container(
                           //color: Colors.orange,
-                          width: MediaQuery.of(context).size.width * 0.049,
+                          width: MediaQuery.of(context).size.width * 0.055,
                           height: MediaQuery.of(context).size.height * 0.025,
                           child: const AutoSizeText('Imran Qureshi',
                               style: TextStyle(
@@ -847,9 +847,9 @@ class _MyHomeState extends State<MyHome> {
                         ),
                         Container(
                           //color: Colors.orange,
-                          width: MediaQuery.of(context).size.width * 0.0325,
+                          width: MediaQuery.of(context).size.width * 0.044,
                           height: MediaQuery.of(context).size.height * 0.016,
-                          child: AutoSizeText('Consultant',
+                          child: const AutoSizeText('Consultant',
                               style: TextStyle(
                                   color: kTextGrey,
                                   fontSize: 12,
