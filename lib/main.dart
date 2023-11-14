@@ -2775,12 +2775,19 @@ class _MyHomeState extends State<MyHome> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const AutoSizeText('AMS Focus',
-                                    style: TextStyle(
-                                        color: kBlack,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica',
-                                        fontWeight: FontWeight.bold)),
+                                Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.046,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: const AutoSizeText('AMS Focus',
+                                      style: TextStyle(
+                                          color: kBlack,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica',
+                                          fontWeight: FontWeight.bold)),
+                                ),
                                 SizedBox(
                                   height:
                                       MediaQuery.of(context).size.height * 0.01,
@@ -2789,7 +2796,17 @@ class _MyHomeState extends State<MyHome> {
                                   items: items.map((String value) {
                                     return DropdownMenuItem(
                                       value: value,
-                                      child: AutoSizeText(value),
+                                      child: Container(
+                                          //color: Colors.orange,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.05,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.025,
+                                          child: AutoSizeText(value)),
                                     );
                                   }).toList(),
                                   value: selectedItem,
@@ -2892,12 +2909,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[0],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.009,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[0],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -2921,12 +2942,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[1],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.009,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[1],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -2950,12 +2975,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[2],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.009,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[2],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -2979,12 +3008,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[3],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.006,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[3],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3008,12 +3041,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[4],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.006,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[4],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3037,12 +3074,16 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[5],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
+                Container(
+                    //color: Colors.orange,
+                    width: MediaQuery.of(context).size.width * 0.006,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(values[5],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
@@ -3066,14 +3107,19 @@ class _MyHomeState extends State<MyHome> {
             width: MediaQuery.of(context).size.width * 0.09,
             child: Row(
               children: [
-                SizedBox(
+                Container(
+                    //color: Colors.green,
                     width: MediaQuery.of(context).size.width * 0.07,
+                    height: MediaQuery.of(context).size.height * 0.025,
                     child: AutoSizeText(items[6],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
-                SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.02,
-                    child: AutoSizeText(values[6],
-                        style: const TextStyle(fontWeight: FontWeight.bold))),
+                Container(
+                  //color: Colors.orange,
+                  width: MediaQuery.of(context).size.width * 0.006,
+                  height: MediaQuery.of(context).size.height * 0.025,
+                  child: AutoSizeText(values[6],
+                      style: const TextStyle(fontWeight: FontWeight.bold)),
+                ),
               ],
             ),
           ),
