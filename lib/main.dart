@@ -688,11 +688,18 @@ class _MyHomeState extends State<MyHome> {
                                 onTap: () {
                                   Navigator.of(context).push(_createRoute1());
                                 },
-                                child: AutoSizeText('Dashboard',
-                                    style: TextStyle(
-                                        color: dashTColor,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica')),
+                                child: Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.045,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: AutoSizeText('Dashboard',
+                                      style: TextStyle(
+                                          color: dashTColor,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica')),
+                                ),
                               ),
                             ],
                           ),
@@ -727,11 +734,18 @@ class _MyHomeState extends State<MyHome> {
                                 onTap: () {
                                   Navigator.of(context).push(_createRoute2());
                                 },
-                                child: AutoSizeText('Prescribing',
-                                    style: TextStyle(
-                                        color: presTColor,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica')),
+                                child: Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.045,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: AutoSizeText('Prescribing',
+                                      style: TextStyle(
+                                          color: presTColor,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica')),
+                                ),
                               ),
                             ],
                           ),
@@ -768,11 +782,18 @@ class _MyHomeState extends State<MyHome> {
                                     Navigator.of(context).push(_createRoute3());
                                   });
                                 },
-                                child: AutoSizeText('Resistance',
-                                    style: TextStyle(
-                                        color: resTColor,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica')),
+                                child: Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.045,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: AutoSizeText('Resistance',
+                                      style: TextStyle(
+                                          color: resTColor,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica')),
+                                ),
                               ),
                             ],
                           ),
@@ -797,28 +818,43 @@ class _MyHomeState extends State<MyHome> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.028,
                     ),
-                    const AutoSizeText('Croydon University Hospital',
-                        style: TextStyle(
-                            color: kBlack,
-                            fontSize: 28,
-                            fontFamily: 'Helvetica')),
+                    Container(
+                      //color: Colors.orange,
+                      width: MediaQuery.of(context).size.width * 0.19,
+                      height: MediaQuery.of(context).size.height * 0.048,
+                      child: const AutoSizeText('Croydon University Hospital',
+                          style: TextStyle(
+                              color: kBlack,
+                              fontSize: 28,
+                              fontFamily: 'Helvetica')),
+                    ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.58,
                     ),
-                    const Column(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        AutoSizeText('Imran Qureshi',
-                            style: TextStyle(
-                                color: kBlack,
-                                fontSize: 14,
-                                fontFamily: 'Helvetica')),
-                        AutoSizeText('Consultant',
-                            style: TextStyle(
-                                color: kTextGrey,
-                                fontSize: 12,
-                                fontFamily: 'Helvetica')),
+                        Container(
+                          //color: Colors.orange,
+                          width: MediaQuery.of(context).size.width * 0.049,
+                          height: MediaQuery.of(context).size.height * 0.025,
+                          child: const AutoSizeText('Imran Qureshi',
+                              style: TextStyle(
+                                  color: kBlack,
+                                  fontSize: 14,
+                                  fontFamily: 'Helvetica')),
+                        ),
+                        Container(
+                          //color: Colors.orange,
+                          width: MediaQuery.of(context).size.width * 0.0325,
+                          height: MediaQuery.of(context).size.height * 0.016,
+                          child: AutoSizeText('Consultant',
+                              style: TextStyle(
+                                  color: kTextGrey,
+                                  fontSize: 12,
+                                  fontFamily: 'Helvetica')),
+                        ),
                       ],
                     ),
                     SizedBox(
