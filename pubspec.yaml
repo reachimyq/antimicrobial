@@ -38,6 +38,7 @@ dependencies:
   fl_chart: ^0.62.0
   data_table_2: ^2.5.2
   overlayment: ^0.2.1
+  auto_size_text: ^3.0.0
 
 dev_dependencies:
   flutter_test:

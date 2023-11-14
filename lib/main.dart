@@ -2,6 +2,7 @@
 
 import 'package:antimicrobial/prescribing.dart';
 import 'package:antimicrobial/templates.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'BarChartSample4.dart';
@@ -605,12 +606,14 @@ class _MyHomeState extends State<MyHome> {
                         SizedBox(
                           width: MediaQuery.of(context).size.width * 0.019,
                         ),
-                        const Text(
-                          'AMS\nGuardian',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
-                              fontFamily: 'Helvetica'),
+                        Container(
+                          child: const AutoSizeText(
+                            'AMS\nGuardian',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 24,
+                                fontFamily: 'Helvetica'),
+                          ),
                         ),
                       ],
                     ),
@@ -638,7 +641,7 @@ class _MyHomeState extends State<MyHome> {
                                 width:
                                     MediaQuery.of(context).size.width * 0.005,
                               ),
-                              Text('MENU',
+                              AutoSizeText('MENU',
                                   style: TextStyle(
                                       color: menuTColor,
                                       fontSize: 16,
@@ -676,7 +679,7 @@ class _MyHomeState extends State<MyHome> {
                                 onTap: () {
                                   Navigator.of(context).push(_createRoute1());
                                 },
-                                child: Text('Dashboard',
+                                child: AutoSizeText('Dashboard',
                                     style: TextStyle(
                                         color: dashTColor,
                                         fontSize: 16,
@@ -715,7 +718,7 @@ class _MyHomeState extends State<MyHome> {
                                 onTap: () {
                                   Navigator.of(context).push(_createRoute2());
                                 },
-                                child: Text('Prescribing',
+                                child: AutoSizeText('Prescribing',
                                     style: TextStyle(
                                         color: presTColor,
                                         fontSize: 16,
@@ -756,7 +759,7 @@ class _MyHomeState extends State<MyHome> {
                                     Navigator.of(context).push(_createRoute3());
                                   });
                                 },
-                                child: Text('Resistance',
+                                child: AutoSizeText('Resistance',
                                     style: TextStyle(
                                         color: resTColor,
                                         fontSize: 16,
@@ -785,7 +788,7 @@ class _MyHomeState extends State<MyHome> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.028,
                     ),
-                    const Text('Croydon University Hospital',
+                    const AutoSizeText('Croydon University Hospital',
                         style: TextStyle(
                             color: kBlack,
                             fontSize: 28,
@@ -797,12 +800,12 @@ class _MyHomeState extends State<MyHome> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text('Imran Qureshi',
+                        AutoSizeText('Imran Qureshi',
                             style: TextStyle(
                                 color: kBlack,
                                 fontSize: 14,
                                 fontFamily: 'Helvetica')),
-                        Text('Consultant',
+                        AutoSizeText('Consultant',
                             style: TextStyle(
                                 color: kTextGrey,
                                 fontSize: 12,
@@ -840,19 +843,19 @@ class _MyHomeState extends State<MyHome> {
                     const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Dashboard',
+                        AutoSizeText('Dashboard',
                             style: TextStyle(
                                 color: kBlack,
                                 fontSize: 18,
                                 fontFamily: 'Helvetica')),
                         // Row(
                         //   children: [
-                        //     Text('Dashboard ',
+                        //     AutoSizeText('Dashboard ',
                         //         style: TextStyle(
                         //             color: kLightGrey,
                         //             fontSize: 15,
                         //             fontFamily: 'Helvetica')),
-                        //     Text('→ Overview',
+                        //     AutoSizeText('→ Overview',
                         //         style: TextStyle(
                         //             color: kBlack,
                         //             fontSize: 15,
@@ -932,7 +935,7 @@ class _MyHomeState extends State<MyHome> {
                                     MediaQuery.of(context).size.height * 0.02,
                               ),
                               const Center(
-                                child: Text('+ manage',
+                                child: AutoSizeText('+ manage',
                                     style: TextStyle(
                                         color: kWhite,
                                         fontSize: 16,
@@ -968,7 +971,7 @@ class _MyHomeState extends State<MyHome> {
                                     MediaQuery.of(context).size.height * 0.02,
                               ),
                               const Center(
-                                child: Text('default',
+                                child: AutoSizeText('default',
                                     style: TextStyle(
                                         color: kWhite,
                                         fontSize: 16,
@@ -1029,7 +1032,7 @@ class _MyHomeState extends State<MyHome> {
                                   const Padding(
                                     padding: EdgeInsets.only(
                                         left: 90.0, top: 25.0, bottom: 10.0),
-                                    child: Text('Prescriptions Run Chart',
+                                    child: AutoSizeText('Prescriptions Run Chart',
                                         style: TextStyle(
                                             color: kGreen,
                                             fontFamily: 'Helvetica',
@@ -1086,7 +1089,7 @@ class _MyHomeState extends State<MyHome> {
                                   //   padding: EdgeInsets.only(
                                   //       top: 25.0, bottom: 10.0),
                                   //   child: Center(
-                                  //     child: Text('Greater than 5 days',
+                                  //     child: AutoSizeText('Greater than 5 days',
                                   //         style: TextStyle(
                                   //             color: Colors.black,
                                   //             fontFamily: 'Helvetica',
@@ -1191,7 +1194,7 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const Text(
+                                                  const AutoSizeText(
                                                     '12',
                                                     style: TextStyle(
                                                         color: kdarkYellow,
@@ -1219,7 +1222,7 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const Text(
+                                                      const AutoSizeText(
                                                         'Unwell',
                                                         style: TextStyle(
                                                             color: kdarkGrey,
@@ -1291,13 +1294,13 @@ class _MyHomeState extends State<MyHome> {
                                                                                     Column(
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        const Text('Unwell', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
+                                                                                        const AutoSizeText('Unwell', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
                                                                                         ),
                                                                                         SizedBox(
                                                                                           width: MediaQuery.of(context).size.width * 0.35,
-                                                                                          child: const Text('The following patients have been on antibiotics for more than 48 hours and they remain febrile on a static or increasing trend +/- haemodynamically unstable', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
+                                                                                          child: const AutoSizeText('The following patients have been on antibiotics for more than 48 hours and they remain febrile on a static or increasing trend +/- haemodynamically unstable', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
                                                                                         ),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
@@ -1326,20 +1329,20 @@ class _MyHomeState extends State<MyHome> {
                                                                                                     minWidth: 600,
                                                                                                     columns: const [
                                                                                                       DataColumn2(
-                                                                                                        label: Text('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         size: ColumnSize.L,
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         //numeric: true,
                                                                                                       ),
                                                                                                     ],
@@ -1385,11 +1388,11 @@ class _MyHomeState extends State<MyHome> {
                                                                                                           });
                                                                                                         },
                                                                                                         cells: [
-                                                                                                          DataCell(Text('${item['mrn']}')),
-                                                                                                          DataCell(Text(item['name'])),
-                                                                                                          DataCell(Text('${item['location']}')),
-                                                                                                          DataCell(Text('${item['bed']}')),
-                                                                                                          DataCell(Text('${item['duration']}')),
+                                                                                                          DataCell(AutoSizeText('${item['mrn']}')),
+                                                                                                          DataCell(AutoSizeText(item['name'])),
+                                                                                                          DataCell(AutoSizeText('${item['location']}')),
+                                                                                                          DataCell(AutoSizeText('${item['bed']}')),
+                                                                                                          DataCell(AutoSizeText('${item['duration']}')),
                                                                                                         ],
                                                                                                       );
                                                                                                     }).toList(),
@@ -1465,7 +1468,7 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const Text(
+                                                    child: const AutoSizeText(
                                                       'Patient remains unwell after 48 hours of antimicrobial therapy',
                                                       style: TextStyle(
                                                           color: kdarkGrey,
@@ -1534,7 +1537,7 @@ class _MyHomeState extends State<MyHome> {
                                                       (5 / 1180),
                                                 ),
                                                 // Number
-                                                const Text(
+                                                const AutoSizeText(
                                                   '14',
                                                   style: TextStyle(
                                                       color: Colors.black,
@@ -1560,7 +1563,7 @@ class _MyHomeState extends State<MyHome> {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   children: [
-                                                    const Text(
+                                                    const AutoSizeText(
                                                       'Renal',
                                                       style: TextStyle(
                                                           color: kdarkGrey,
@@ -1634,13 +1637,13 @@ class _MyHomeState extends State<MyHome> {
                                                                                   Column(
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
-                                                                                      const Text('Renal Impairment', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
+                                                                                      const AutoSizeText('Renal Impairment', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
                                                                                       SizedBox(
                                                                                         height: MediaQuery.of(context).size.height * 0.025,
                                                                                       ),
                                                                                       SizedBox(
                                                                                         width: MediaQuery.of(context).size.width * 0.35,
-                                                                                        child: const Text('The following patients have declining renal function and are on antibiotics, which are known to cause renal dysfunction.', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
+                                                                                        child: const AutoSizeText('The following patients have declining renal function and are on antibiotics, which are known to cause renal dysfunction.', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
                                                                                       ),
                                                                                       SizedBox(
                                                                                         height: MediaQuery.of(context).size.height * 0.025,
@@ -1669,20 +1672,20 @@ class _MyHomeState extends State<MyHome> {
                                                                                                   minWidth: 600,
                                                                                                   columns: const [
                                                                                                     DataColumn2(
-                                                                                                      label: Text('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                      label: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       size: ColumnSize.L,
                                                                                                     ),
                                                                                                     DataColumn(
-                                                                                                      label: Text('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                      label: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                     ),
                                                                                                     DataColumn(
-                                                                                                      label: Text('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                      label: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                     ),
                                                                                                     DataColumn(
-                                                                                                      label: Text('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                      label: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                     ),
                                                                                                     DataColumn(
-                                                                                                      label: Text('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                      label: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       //numeric: true,
                                                                                                     ),
                                                                                                   ],
@@ -1728,11 +1731,11 @@ class _MyHomeState extends State<MyHome> {
                                                                                                         });
                                                                                                       },
                                                                                                       cells: [
-                                                                                                        DataCell(Text('${item['mrn']}')),
-                                                                                                        DataCell(Text(item['name'])),
-                                                                                                        DataCell(Text('${item['location']}')),
-                                                                                                        DataCell(Text('${item['bed']}')),
-                                                                                                        DataCell(Text('${item['duration']}')),
+                                                                                                        DataCell(AutoSizeText('${item['mrn']}')),
+                                                                                                        DataCell(AutoSizeText(item['name'])),
+                                                                                                        DataCell(AutoSizeText('${item['location']}')),
+                                                                                                        DataCell(AutoSizeText('${item['bed']}')),
+                                                                                                        DataCell(AutoSizeText('${item['duration']}')),
                                                                                                       ],
                                                                                                     );
                                                                                                   }).toList(),
@@ -1806,7 +1809,7 @@ class _MyHomeState extends State<MyHome> {
                                                           .size
                                                           .height *
                                                       (40 / 1180),
-                                                  child: const Text(
+                                                  child: const AutoSizeText(
                                                     'On nephrotoxic antimicrobials with declining eGFR',
                                                     style: TextStyle(
                                                         color: kdarkGrey,
@@ -1892,7 +1895,7 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const Text(
+                                                  const AutoSizeText(
                                                     '7',
                                                     style: TextStyle(
                                                         color: kGreen,
@@ -1920,7 +1923,7 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const Text(
+                                                      const AutoSizeText(
                                                         'Afebrile',
                                                         style: TextStyle(
                                                             color: kdarkGrey,
@@ -1992,13 +1995,13 @@ class _MyHomeState extends State<MyHome> {
                                                                                     Column(
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        const Text('Afebrile', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
+                                                                                        const AutoSizeText('Afebrile', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
                                                                                         ),
                                                                                         SizedBox(
                                                                                           width: MediaQuery.of(context).size.width * 0.35,
-                                                                                          child: const Text('The following patients have been on antibiotics from admission and have not had an episode of fever or hypothermia throughout', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
+                                                                                          child: const AutoSizeText('The following patients have been on antibiotics from admission and have not had an episode of fever or hypothermia throughout', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
                                                                                         ),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
@@ -2027,20 +2030,20 @@ class _MyHomeState extends State<MyHome> {
                                                                                                     minWidth: 600,
                                                                                                     columns: const [
                                                                                                       DataColumn2(
-                                                                                                        label: Text('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         size: ColumnSize.L,
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         //numeric: true,
                                                                                                       ),
                                                                                                     ],
@@ -2086,11 +2089,11 @@ class _MyHomeState extends State<MyHome> {
                                                                                                           });
                                                                                                         },
                                                                                                         cells: [
-                                                                                                          DataCell(Text('${item['mrn']}')),
-                                                                                                          DataCell(Text(item['name'])),
-                                                                                                          DataCell(Text('${item['location']}')),
-                                                                                                          DataCell(Text('${item['bed']}')),
-                                                                                                          DataCell(Text('${item['duration']}')),
+                                                                                                          DataCell(AutoSizeText('${item['mrn']}')),
+                                                                                                          DataCell(AutoSizeText(item['name'])),
+                                                                                                          DataCell(AutoSizeText('${item['location']}')),
+                                                                                                          DataCell(AutoSizeText('${item['bed']}')),
+                                                                                                          DataCell(AutoSizeText('${item['duration']}')),
                                                                                                         ],
                                                                                                       );
                                                                                                     }).toList(),
@@ -2166,7 +2169,7 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const Text(
+                                                    child: const AutoSizeText(
                                                       '48 hrs of antimicrobials but never had a fever',
                                                       style: TextStyle(
                                                           color: kdarkGrey,
@@ -2253,7 +2256,7 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const Text(
+                                                  const AutoSizeText(
                                                     '11',
                                                     style: TextStyle(
                                                         color: klightGray,
@@ -2281,7 +2284,7 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const Text(
+                                                      const AutoSizeText(
                                                         'Oral Switch',
                                                         style: TextStyle(
                                                             color: kdarkGrey,
@@ -2353,13 +2356,13 @@ class _MyHomeState extends State<MyHome> {
                                                                                     Column(
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        const Text('Oral Switch', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
+                                                                                        const AutoSizeText('Oral Switch', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
                                                                                         ),
                                                                                         SizedBox(
                                                                                           width: MediaQuery.of(context).size.width * 0.35,
-                                                                                          child: const Text('The following patients are currently on intravenous antibiotics. They should now be suitable for a switch to an oral antibiotic', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
+                                                                                          child: const AutoSizeText('The following patients are currently on intravenous antibiotics. They should now be suitable for a switch to an oral antibiotic', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
                                                                                         ),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
@@ -2388,20 +2391,20 @@ class _MyHomeState extends State<MyHome> {
                                                                                                     minWidth: 600,
                                                                                                     columns: const [
                                                                                                       DataColumn2(
-                                                                                                        label: Text('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         size: ColumnSize.L,
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: Text('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                                                                                                         //numeric: true,
                                                                                                       ),
                                                                                                     ],
@@ -2447,11 +2450,11 @@ class _MyHomeState extends State<MyHome> {
                                                                                                           });
                                                                                                         },
                                                                                                         cells: [
-                                                                                                          DataCell(Text('${item['mrn']}')),
-                                                                                                          DataCell(Text(item['name'])),
-                                                                                                          DataCell(Text('${item['location']}')),
-                                                                                                          DataCell(Text('${item['bed']}')),
-                                                                                                          DataCell(Text('${item['duration']}')),
+                                                                                                          DataCell(AutoSizeText('${item['mrn']}')),
+                                                                                                          DataCell(AutoSizeText(item['name'])),
+                                                                                                          DataCell(AutoSizeText('${item['location']}')),
+                                                                                                          DataCell(AutoSizeText('${item['bed']}')),
+                                                                                                          DataCell(AutoSizeText('${item['duration']}')),
                                                                                                         ],
                                                                                                       );
                                                                                                     }).toList(),
@@ -2527,7 +2530,7 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const Text(
+                                                    child: const AutoSizeText(
                                                       'Patient on intravenous antibiotics suitable for oral switch',
                                                       style: TextStyle(
                                                           color: kdarkGrey,
@@ -2565,7 +2568,7 @@ class _MyHomeState extends State<MyHome> {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('AMS Focus',
+                                const AutoSizeText('AMS Focus',
                                     style: TextStyle(
                                         color: kBlack,
                                         fontSize: 16,
@@ -2579,7 +2582,7 @@ class _MyHomeState extends State<MyHome> {
                                   items: items.map((String value) {
                                     return DropdownMenuItem(
                                       value: value,
-                                      child: Text(value),
+                                      child: AutoSizeText(value),
                                     );
                                   }).toList(),
                                   value: selectedItem,
@@ -2684,11 +2687,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[0],
+                    child: AutoSizeText(items[0],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[0],
+                    child: AutoSizeText(values[0],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2713,11 +2716,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[1],
+                    child: AutoSizeText(items[1],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[1],
+                    child: AutoSizeText(values[1],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2742,11 +2745,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[2],
+                    child: AutoSizeText(items[2],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[2],
+                    child: AutoSizeText(values[2],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2771,11 +2774,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[3],
+                    child: AutoSizeText(items[3],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[3],
+                    child: AutoSizeText(values[3],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2800,11 +2803,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[4],
+                    child: AutoSizeText(items[4],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[4],
+                    child: AutoSizeText(values[4],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2829,11 +2832,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[5],
+                    child: AutoSizeText(items[5],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[5],
+                    child: AutoSizeText(values[5],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2858,11 +2861,11 @@ class _MyHomeState extends State<MyHome> {
               children: [
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
-                    child: Text(items[6],
+                    child: AutoSizeText(items[6],
                         style: const TextStyle(fontFamily: 'Helvetica'))),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.02,
-                    child: Text(values[6],
+                    child: AutoSizeText(values[6],
                         style: const TextStyle(fontWeight: FontWeight.bold))),
               ],
             ),
@@ -2904,7 +2907,7 @@ class _MyHomeState extends State<MyHome> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(title,
+                    AutoSizeText(title,
                         style: const TextStyle(
                             color: kGreen,
                             fontSize: 18,
@@ -2915,7 +2918,7 @@ class _MyHomeState extends State<MyHome> {
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.35,
-                      child: Text(explanation,
+                      child: AutoSizeText(explanation,
                           style: const TextStyle(
                               color: kdarkGrey,
                               fontSize: 12,
@@ -2949,32 +2952,32 @@ class _MyHomeState extends State<MyHome> {
                                 minWidth: 600,
                                 columns: const [
                                   DataColumn2(
-                                    label: Text('MRN',
+                                    label: AutoSizeText('MRN',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontFamily: 'Helvetica')),
                                     size: ColumnSize.L,
                                   ),
                                   DataColumn(
-                                    label: Text('Name',
+                                    label: AutoSizeText('Name',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontFamily: 'Helvetica')),
                                   ),
                                   DataColumn(
-                                    label: Text('Location',
+                                    label: AutoSizeText('Location',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontFamily: 'Helvetica')),
                                   ),
                                   DataColumn(
-                                    label: Text('Bed',
+                                    label: AutoSizeText('Bed',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontFamily: 'Helvetica')),
                                   ),
                                   DataColumn(
-                                    label: Text('Duration',
+                                    label: AutoSizeText('Duration',
                                         style: TextStyle(
                                             fontWeight: FontWeight.w600,
                                             fontFamily: 'Helvetica')),
@@ -3036,13 +3039,13 @@ class _MyHomeState extends State<MyHome> {
                                                     'Muhammad Khan') {}
                                           },
                                           cells: [
-                                            DataCell(Text('${item['mrn']}')),
-                                            DataCell(Text(item['name'])),
+                                            DataCell(AutoSizeText('${item['mrn']}')),
+                                            DataCell(AutoSizeText(item['name'])),
                                             DataCell(
-                                                Text('${item['location']}')),
-                                            DataCell(Text('${item['bed']}')),
+                                                AutoSizeText('${item['location']}')),
+                                            DataCell(AutoSizeText('${item['bed']}')),
                                             DataCell(
-                                                Text('${item['duration']}')),
+                                                AutoSizeText('${item['duration']}')),
                                           ],
                                         );
                                       }).toList()
@@ -3096,13 +3099,13 @@ class _MyHomeState extends State<MyHome> {
                                               },
                                               cells: [
                                                 DataCell(
-                                                    Text('${item['mrn']}')),
-                                                DataCell(Text(item['name'])),
-                                                DataCell(Text(
+                                                    AutoSizeText('${item['mrn']}')),
+                                                DataCell(AutoSizeText(item['name'])),
+                                                DataCell(AutoSizeText(
                                                     '${item['location']}')),
                                                 DataCell(
-                                                    Text('${item['bed']}')),
-                                                DataCell(Text(
+                                                    AutoSizeText('${item['bed']}')),
+                                                DataCell(AutoSizeText(
                                                     '${item['duration']}')),
                                               ],
                                             );
@@ -3133,14 +3136,14 @@ class _MyHomeState extends State<MyHome> {
                                                   },
                                                   cells: [
                                                     DataCell(
-                                                        Text('${item['mrn']}')),
+                                                        AutoSizeText('${item['mrn']}')),
                                                     DataCell(
-                                                        Text(item['name'])),
-                                                    DataCell(Text(
+                                                        AutoSizeText(item['name'])),
+                                                    DataCell(AutoSizeText(
                                                         '${item['location']}')),
                                                     DataCell(
-                                                        Text('${item['bed']}')),
-                                                    DataCell(Text(
+                                                        AutoSizeText('${item['bed']}')),
+                                                    DataCell(AutoSizeText(
                                                         '${item['duration']}')),
                                                   ],
                                                 );
@@ -3171,15 +3174,15 @@ class _MyHomeState extends State<MyHome> {
                                                         });
                                                       },
                                                       cells: [
-                                                        DataCell(Text(
+                                                        DataCell(AutoSizeText(
                                                             '${item['mrn']}')),
                                                         DataCell(
-                                                            Text(item['name'])),
-                                                        DataCell(Text(
+                                                            AutoSizeText(item['name'])),
+                                                        DataCell(AutoSizeText(
                                                             '${item['location']}')),
-                                                        DataCell(Text(
+                                                        DataCell(AutoSizeText(
                                                             '${item['bed']}')),
-                                                        DataCell(Text(
+                                                        DataCell(AutoSizeText(
                                                             '${item['duration']}')),
                                                       ],
                                                     );
@@ -3216,15 +3219,15 @@ class _MyHomeState extends State<MyHome> {
                                                             });
                                                           },
                                                           cells: [
-                                                            DataCell(Text(
+                                                            DataCell(AutoSizeText(
                                                                 '${item['mrn']}')),
-                                                            DataCell(Text(
+                                                            DataCell(AutoSizeText(
                                                                 item['name'])),
-                                                            DataCell(Text(
+                                                            DataCell(AutoSizeText(
                                                                 '${item['location']}')),
-                                                            DataCell(Text(
+                                                            DataCell(AutoSizeText(
                                                                 '${item['bed']}')),
-                                                            DataCell(Text(
+                                                            DataCell(AutoSizeText(
                                                                 '${item['duration']}')),
                                                           ],
                                                         );
@@ -3263,16 +3266,16 @@ class _MyHomeState extends State<MyHome> {
                                                                 });
                                                               },
                                                               cells: [
-                                                                DataCell(Text(
+                                                                DataCell(AutoSizeText(
                                                                     '${item['mrn']}')),
-                                                                DataCell(Text(
+                                                                DataCell(AutoSizeText(
                                                                     item[
                                                                         'name'])),
-                                                                DataCell(Text(
+                                                                DataCell(AutoSizeText(
                                                                     '${item['location']}')),
-                                                                DataCell(Text(
+                                                                DataCell(AutoSizeText(
                                                                     '${item['bed']}')),
-                                                                DataCell(Text(
+                                                                DataCell(AutoSizeText(
                                                                     '${item['duration']}')),
                                                               ],
                                                             );
@@ -3310,16 +3313,16 @@ class _MyHomeState extends State<MyHome> {
                                                                     });
                                                                   },
                                                                   cells: [
-                                                                    DataCell(Text(
+                                                                    DataCell(AutoSizeText(
                                                                         '${item['mrn']}')),
-                                                                    DataCell(Text(
+                                                                    DataCell(AutoSizeText(
                                                                         item[
                                                                             'name'])),
-                                                                    DataCell(Text(
+                                                                    DataCell(AutoSizeText(
                                                                         '${item['location']}')),
-                                                                    DataCell(Text(
+                                                                    DataCell(AutoSizeText(
                                                                         '${item['bed']}')),
-                                                                    DataCell(Text(
+                                                                    DataCell(AutoSizeText(
                                                                         '${item['duration']}')),
                                                                   ],
                                                                 );
@@ -3357,15 +3360,15 @@ class _MyHomeState extends State<MyHome> {
                                                                       },
                                                                       cells: [
                                                                         DataCell(
-                                                                            Text('${item['mrn']}')),
+                                                                            AutoSizeText('${item['mrn']}')),
                                                                         DataCell(
-                                                                            Text(item['name'])),
+                                                                            AutoSizeText(item['name'])),
                                                                         DataCell(
-                                                                            Text('${item['location']}')),
+                                                                            AutoSizeText('${item['location']}')),
                                                                         DataCell(
-                                                                            Text('${item['bed']}')),
+                                                                            AutoSizeText('${item['bed']}')),
                                                                         DataCell(
-                                                                            Text('${item['duration']}')),
+                                                                            AutoSizeText('${item['duration']}')),
                                                                       ],
                                                                     );
                                                                   }).toList()
@@ -3401,15 +3404,15 @@ class _MyHomeState extends State<MyHome> {
                                                                       },
                                                                       cells: [
                                                                         DataCell(
-                                                                            Text('${item['mrn']}')),
+                                                                            AutoSizeText('${item['mrn']}')),
                                                                         DataCell(
-                                                                            Text(item['name'])),
+                                                                            AutoSizeText(item['name'])),
                                                                         DataCell(
-                                                                            Text('${item['location']}')),
+                                                                            AutoSizeText('${item['location']}')),
                                                                         DataCell(
-                                                                            Text('${item['bed']}')),
+                                                                            AutoSizeText('${item['bed']}')),
                                                                         DataCell(
-                                                                            Text('${item['duration']}')),
+                                                                            AutoSizeText('${item['duration']}')),
                                                                       ],
                                                                     );
                                                                   }).toList(),
@@ -3443,7 +3446,7 @@ class _MyHomeState extends State<MyHome> {
           width: MediaQuery.of(context).size.width * 0.2,
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text('Muhammad'),
+        const AutoSizeText('Muhammad'),
       ],
     );
   }

@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import '../../constants.dart';
@@ -95,7 +96,7 @@ class DashButton extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * (5 / 1180),
               ),
               // Number
-              Text(
+              AutoSizeText(
                 '$number',
                 style: TextStyle(
                     color: colour,
@@ -115,7 +116,7 @@ class DashButton extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
+                  AutoSizeText(
                     title,
                     style: const TextStyle(
                         color: kdarkGrey,
@@ -164,7 +165,7 @@ class DashButton extends StatelessWidget {
               Container(
                 width: MediaQuery.of(context).size.width * (70 / 632),
                 height: MediaQuery.of(context).size.height * (40 / 1180),
-                child: Text(
+                child: AutoSizeText(
                   explanation,
                   style: const TextStyle(
                       color: kdarkGrey,
@@ -217,7 +218,7 @@ class InfoTemplate extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              Text(title,
+              AutoSizeText(title,
                   style: TextStyle(
                       color: colour,
                       fontSize: 15,
@@ -226,7 +227,7 @@ class InfoTemplate extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              Text('$number',
+              AutoSizeText('$number',
                   style: const TextStyle(
                       color: kBlack, fontSize: 25, fontFamily: 'Helvetica')),
             ],
@@ -371,7 +372,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Patient Details',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -389,48 +390,48 @@ class PatientUnwellInfo extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text('Name: ',
+                      AutoSizeText('Name: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Muhammad Khan'),
+                      AutoSizeText('Muhammad Khan'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Number: ',
+                      AutoSizeText('Number: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('123456'),
+                      AutoSizeText('123456'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Age/Sex: ',
+                      AutoSizeText('Age/Sex: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('62 year old male'),
+                      AutoSizeText('62 year old male'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Type: ',
+                      AutoSizeText('Admission Type: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Emergency Admission'),
+                      AutoSizeText('Emergency Admission'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Date: ',
+                      AutoSizeText('Admission Date: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('7th November 2023'),
+                      AutoSizeText('7th November 2023'),
                       Spacer(),
-                      Text('Day 8'),
+                      AutoSizeText('Day 8'),
                       SizedBoxW(width: 20),
                     ],
                   ),
@@ -440,7 +441,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Admission Clerking',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -456,63 +457,63 @@ class PatientUnwellInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     'PC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Cough, fever, sweating and sob\n'),
-                  Text(
+                  AutoSizeText('Cough, fever, sweating and sob\n'),
+                  AutoSizeText(
                     'HPC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Muhammad presented with a three day history of feeling unwell, becoming increasingly short of breath. He complained of some chest pain, sweating, and fevers.\n\nMuhammad recently travelled to Spain for a work-related trip where he stayed in a hotel and went swimming at the beach. He started to feel unwell about four days after returning from his trip. He has a slight cough, which is productive of green sputum. He feels tired and has had a fever and been sweating. He has no headache, nausea or vomiting.\n\nHe drank only bottled water in Spain and ate at a number of restaurants. He denies any diarrhoea or pr bleeding. Of note, he travelled with his wife and children and none of them are unwell.\n'),
-                  Text(
+                  AutoSizeText(
                     'PMH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Asthma\n'),
-                  Text(
+                  AutoSizeText('Asthma\n'),
+                  AutoSizeText(
                     'Allergies:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('NKDA\n'),
-                  Text(
+                  AutoSizeText('NKDA\n'),
+                  AutoSizeText(
                     'DH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Salbutamol 2 puffs BD prn\n'),
-                  Text(
+                  AutoSizeText('Salbutamol 2 puffs BD prn\n'),
+                  AutoSizeText(
                     'SH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Works as an accountant\nLives with his wife and three children\nIndependent of ADLs\nSmokes 5 cigarettes per day\nETOH none\n'),
-                  Text(
+                  AutoSizeText(
                     'OE:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Temp: 38.2\nHR: 105\nBP: 105/86\nRR: 24\nSats: 91% on 4 litres nasal cannulae\n\nResp:\nCrackles at the right mid-zone\n\nCVS\nHeart sounds normal\n'),
-                  Text(
+                  AutoSizeText(
                     'DD:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Pneumonia\nAtypical infection\nLegionella\n'),
-                  Text(
+                  AutoSizeText('Pneumonia\nAtypical infection\nLegionella\n'),
+                  AutoSizeText(
                     'Plan:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Antibiotics\nIV Fluids\nOxygen\nBlood Gas\nBlood Cultures\nChest X-ray\n'),
                 ],
               ),
@@ -523,7 +524,7 @@ class PatientUnwellInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Observations',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -540,33 +541,33 @@ class PatientUnwellInfo extends StatelessWidget {
             minWidth: 300,
             columns: const [
               DataColumn2(
-                label: Text('Date',
+                label: AutoSizeText('Date',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('Temp',
+                label: AutoSizeText('Temp',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('HR',
+                label: AutoSizeText('HR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('BP',
+                label: AutoSizeText('BP',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('RR',
+                label: AutoSizeText('RR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Sats',
+                label: AutoSizeText('Sats',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
@@ -578,12 +579,12 @@ class PatientUnwellInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Date'])),
-                  DataCell(Text(item['Temp'])),
-                  DataCell(Text(item['HR'])),
-                  DataCell(Text(item['BP'])),
-                  DataCell(Text(item['RR'])),
-                  DataCell(Text(item['Sats'])),
+                  DataCell(AutoSizeText(item['Date'])),
+                  DataCell(AutoSizeText(item['Temp'])),
+                  DataCell(AutoSizeText(item['HR'])),
+                  DataCell(AutoSizeText(item['BP'])),
+                  DataCell(AutoSizeText(item['RR'])),
+                  DataCell(AutoSizeText(item['Sats'])),
                 ],
               );
             }).toList(),
@@ -595,7 +596,7 @@ class PatientUnwellInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Blood Results',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -612,63 +613,63 @@ class PatientUnwellInfo extends StatelessWidget {
             minWidth: 300,
             columns: const [
               DataColumn2(
-                label: Text('Date',
+                label: AutoSizeText('Date',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('HB',
+                label: AutoSizeText('HB',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('WBC',
+                label: AutoSizeText('WBC',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Neut',
+                label: AutoSizeText('Neut',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Plt',
+                label: AutoSizeText('Plt',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('CRP',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
-                //numeric: true,
-              ),
-              DataColumn(
-                label: Text('Urea',
+                label: AutoSizeText('CRP',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('Cr',
+                label: AutoSizeText('Urea',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('eGFR',
+                label: AutoSizeText('Cr',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('ALP',
+                label: AutoSizeText('eGFR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('ALT',
+                label: AutoSizeText('ALP',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                //numeric: true,
+              ),
+              DataColumn(
+                label: AutoSizeText('ALT',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
@@ -681,17 +682,17 @@ class PatientUnwellInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Date'])),
-                  DataCell(Text(item['HB'])),
-                  DataCell(Text(item['WBC'])),
-                  DataCell(Text(item['Neut'])),
-                  DataCell(Text(item['Plt'])),
-                  DataCell(Text(item['CRP'])),
-                  DataCell(Text(item['Urea'])),
-                  DataCell(Text(item['Cr'])),
-                  DataCell(Text(item['eGFR'])),
-                  DataCell(Text(item['ALP'])),
-                  DataCell(Text(item['ALT'])),
+                  DataCell(AutoSizeText(item['Date'])),
+                  DataCell(AutoSizeText(item['HB'])),
+                  DataCell(AutoSizeText(item['WBC'])),
+                  DataCell(AutoSizeText(item['Neut'])),
+                  DataCell(AutoSizeText(item['Plt'])),
+                  DataCell(AutoSizeText(item['CRP'])),
+                  DataCell(AutoSizeText(item['Urea'])),
+                  DataCell(AutoSizeText(item['Cr'])),
+                  DataCell(AutoSizeText(item['eGFR'])),
+                  DataCell(AutoSizeText(item['ALP'])),
+                  DataCell(AutoSizeText(item['ALT'])),
                 ],
               );
             }).toList(),
@@ -700,7 +701,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Microbiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -716,31 +717,31 @@ class PatientUnwellInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     '07.11.23 Urine: Pneumococcal Antigen',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected\n'),
-                  Text(
+                  AutoSizeText('Not detected\n'),
+                  AutoSizeText(
                     '07.11.23 Urine: Legionella Antigen',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected\n'),
-                  Text(
+                  AutoSizeText('Not detected\n'),
+                  AutoSizeText(
                     '07.11.23 Blood Cultures',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected'),
+                  AutoSizeText('Not detected'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Radiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -756,14 +757,14 @@ class PatientUnwellInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     '07.11.23 Chest X-Ray\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Clinical details: Presented with fever, cough and shortness of breath.\n'),
-                  Text(
+                  AutoSizeText(
                       'There is evidence of dense consolidation at the lower left base of the lung. There are no other suspicious masses or lesions. '),
                 ],
               ),
@@ -774,7 +775,7 @@ class PatientUnwellInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Antimicrobial Therapy',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -791,39 +792,39 @@ class PatientUnwellInfo extends StatelessWidget {
             minWidth: 500,
             columns: const [
               DataColumn2(
-                label: Text('Antibiotic',
+                label: AutoSizeText('Antibiotic',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('Route',
+                label: AutoSizeText('Route',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Dose',
+                label: AutoSizeText('Dose',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Start',
+                label: AutoSizeText('Start',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Stop',
+                label: AutoSizeText('Stop',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Duration',
+                label: AutoSizeText('Duration',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('Indication',
+                label: AutoSizeText('Indication',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
@@ -836,13 +837,13 @@ class PatientUnwellInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Antibiotic'])),
-                  DataCell(Text(item['Route'])),
-                  DataCell(Text(item['Dose'])),
-                  DataCell(Text(item['Start'])),
-                  DataCell(Text(item['Stop'])),
-                  DataCell(Text(item['Duration'])),
-                  DataCell(Text(item['Indication'])),
+                  DataCell(AutoSizeText(item['Antibiotic'])),
+                  DataCell(AutoSizeText(item['Route'])),
+                  DataCell(AutoSizeText(item['Dose'])),
+                  DataCell(AutoSizeText(item['Start'])),
+                  DataCell(AutoSizeText(item['Stop'])),
+                  DataCell(AutoSizeText(item['Duration'])),
+                  DataCell(AutoSizeText(item['Indication'])),
                 ],
               );
             }).toList(),
@@ -851,7 +852,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Summary',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -867,7 +868,7 @@ class PatientUnwellInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                       'Mr Khan was admitted to Croydon University Hospital on the 07.11.23 with a lower respiratory tract infection. He was commenced on Amoxicillin IV 1g TDS and Clarithromycin 500mg BD as well as being a single dose of Amikacin. Over the past 48 hours, his condition has not improved and he is remains febrile and haemodynamically unstable. His blood results are not improving and his chest x-ray shows evidence of dense consolidation. Of note he has no positive Microbiology results. His conditions continues to deteriorate.'),
                 ],
               ),
@@ -875,7 +876,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Action',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -896,7 +897,7 @@ class PatientUnwellInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Suggestion',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -912,7 +913,7 @@ class PatientUnwellInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                       'Given that this patient is deteriorating and is persistently febrile, blood cultures should be repeated as well as an escalation in the antibiotic therapy from Amoxicillin and Clarithromycin to Piperacillin-Tazobactam and Clarithromycin. Continue to monitor the patient for the next 48 hours and discuss with Microbiology if no improvement.'),
                 ],
               ),
@@ -1083,7 +1084,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Patient Details',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1101,48 +1102,48 @@ class PatientRenalInfo extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text('Name: ',
+                      AutoSizeText('Name: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Alejandro Lopez'),
+                      AutoSizeText('Alejandro Lopez'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Number: ',
+                      AutoSizeText('Number: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('557692'),
+                      AutoSizeText('557692'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Age/Sex: ',
+                      AutoSizeText('Age/Sex: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('39 year old male'),
+                      AutoSizeText('39 year old male'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Type: ',
+                      AutoSizeText('Admission Type: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Emergency Admission'),
+                      AutoSizeText('Emergency Admission'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Date: ',
+                      AutoSizeText('Admission Date: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('15th October 2023'),
+                      AutoSizeText('15th October 2023'),
                       Spacer(),
-                      Text('Day 30'),
+                      AutoSizeText('Day 30'),
                       SizedBoxW(width: 20),
                     ],
                   ),
@@ -1152,7 +1153,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Admission Clerking',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1168,63 +1169,63 @@ class PatientRenalInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     'PC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Central abdominal pain\n'),
-                  Text(
+                  AutoSizeText('Central abdominal pain\n'),
+                  AutoSizeText(
                     'HPC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Alejandro presented with a two day history of central abdominal pain. The pain came on gradually and was quite sharp in nature. He was also feeling some associated back pain, with the pain in the centre of the abdomen going straight through to the back. He describes the pain as 8-9/10. Painkillers seem to help with the pain marginally, but it is not obviously exacerbated by anything.\n\nHe has not been doing any strenuous activity lately, no recent history of travel and no change in sexual activity, same female partner for the last 10 years. Alejandro was recently made redundant and this has been causing him a lot of stress. He is drinking more heavily than he usually does.\n'),
-                  Text(
+                  AutoSizeText(
                     'PMH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Nil\n'),
-                  Text(
+                  AutoSizeText('Nil\n'),
+                  AutoSizeText(
                     'Allergies:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Allergic to Penicillin - lip swelling\n'),
-                  Text(
+                  AutoSizeText('Allergic to Penicillin - lip swelling\n'),
+                  AutoSizeText(
                     'DH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Nil\n'),
-                  Text(
+                  AutoSizeText('Nil\n'),
+                  AutoSizeText(
                     'SH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Currently unemployed\nLives with his wife and two children\nIndependent of ADLs\nSmokes 20 cigarettes per day\nETOH about 30 units a week\n'),
-                  Text(
+                  AutoSizeText(
                     'OE:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Temp: 37.6\nHR: 102\nBP: 113/84\nRR: 20\nSats: 96% on air\n\nResp:\nNil\n\nCVS\nHeart sounds normal\n\nGI:\nTender to palaption in the centre of the abdomen with some mild percussion tenderness. No shifting dullness. Could not appreciate a pulsatile or expansile mass.\n'),
-                  Text(
+                  AutoSizeText(
                     'DD:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Hepato-biliary infection\nPancreatitis\n'),
-                  Text(
+                  AutoSizeText('Hepato-biliary infection\nPancreatitis\n'),
+                  AutoSizeText(
                     'Plan:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Antibiotics\nIV Fluids\nUSS Abdomen\nMonitor LFTs\n'),
+                  AutoSizeText('Antibiotics\nIV Fluids\nUSS Abdomen\nMonitor LFTs\n'),
                 ],
               ),
             )),
@@ -1234,7 +1235,7 @@ class PatientRenalInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Observations',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -1251,33 +1252,33 @@ class PatientRenalInfo extends StatelessWidget {
             minWidth: 300,
             columns: const [
               DataColumn2(
-                label: Text('Date',
+                label: AutoSizeText('Date',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('Temp',
+                label: AutoSizeText('Temp',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('HR',
+                label: AutoSizeText('HR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('BP',
+                label: AutoSizeText('BP',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('RR',
+                label: AutoSizeText('RR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Sats',
+                label: AutoSizeText('Sats',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
@@ -1289,12 +1290,12 @@ class PatientRenalInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Date'])),
-                  DataCell(Text(item['Temp'])),
-                  DataCell(Text(item['HR'])),
-                  DataCell(Text(item['BP'])),
-                  DataCell(Text(item['RR'])),
-                  DataCell(Text(item['Sats'])),
+                  DataCell(AutoSizeText(item['Date'])),
+                  DataCell(AutoSizeText(item['Temp'])),
+                  DataCell(AutoSizeText(item['HR'])),
+                  DataCell(AutoSizeText(item['BP'])),
+                  DataCell(AutoSizeText(item['RR'])),
+                  DataCell(AutoSizeText(item['Sats'])),
                 ],
               );
             }).toList(),
@@ -1306,7 +1307,7 @@ class PatientRenalInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Blood Results',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -1323,63 +1324,63 @@ class PatientRenalInfo extends StatelessWidget {
             minWidth: 300,
             columns: const [
               DataColumn2(
-                label: Text('Date',
+                label: AutoSizeText('Date',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('HB',
+                label: AutoSizeText('HB',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('WBC',
+                label: AutoSizeText('WBC',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Neut',
+                label: AutoSizeText('Neut',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Plt',
+                label: AutoSizeText('Plt',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('CRP',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
-                //numeric: true,
-              ),
-              DataColumn(
-                label: Text('Urea',
+                label: AutoSizeText('CRP',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('Cr',
+                label: AutoSizeText('Urea',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('eGFR',
+                label: AutoSizeText('Cr',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('ALP',
+                label: AutoSizeText('eGFR',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('ALT',
+                label: AutoSizeText('ALP',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                //numeric: true,
+              ),
+              DataColumn(
+                label: AutoSizeText('ALT',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
@@ -1392,17 +1393,17 @@ class PatientRenalInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Date'])),
-                  DataCell(Text(item['HB'])),
-                  DataCell(Text(item['WBC'])),
-                  DataCell(Text(item['Neut'])),
-                  DataCell(Text(item['Plt'])),
-                  DataCell(Text(item['CRP'])),
-                  DataCell(Text(item['Urea'])),
-                  DataCell(Text(item['Cr'])),
-                  DataCell(Text(item['eGFR'])),
-                  DataCell(Text(item['ALP'])),
-                  DataCell(Text(item['ALT'])),
+                  DataCell(AutoSizeText(item['Date'])),
+                  DataCell(AutoSizeText(item['HB'])),
+                  DataCell(AutoSizeText(item['WBC'])),
+                  DataCell(AutoSizeText(item['Neut'])),
+                  DataCell(AutoSizeText(item['Plt'])),
+                  DataCell(AutoSizeText(item['CRP'])),
+                  DataCell(AutoSizeText(item['Urea'])),
+                  DataCell(AutoSizeText(item['Cr'])),
+                  DataCell(AutoSizeText(item['eGFR'])),
+                  DataCell(AutoSizeText(item['ALP'])),
+                  DataCell(AutoSizeText(item['ALT'])),
                 ],
               );
             }).toList(),
@@ -1411,7 +1412,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Microbiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1427,31 +1428,31 @@ class PatientRenalInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     '07.11.23 Urine: Pneumococcal Antigen',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected\n'),
-                  Text(
+                  AutoSizeText('Not detected\n'),
+                  AutoSizeText(
                     '07.11.23 Urine: Legionella Antigen',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected\n'),
-                  Text(
+                  AutoSizeText('Not detected\n'),
+                  AutoSizeText(
                     '07.11.23 Blood Cultures',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Not detected'),
+                  AutoSizeText('Not detected'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Radiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1467,14 +1468,14 @@ class PatientRenalInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     '07.11.23 Chest X-Ray\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Clinical details: Presented with fever, cough and shortness of breath.\n'),
-                  Text(
+                  AutoSizeText(
                       'There is evidence of dense consolidation at the lower left base of the lung. There are no other suspicious masses or lesions. '),
                 ],
               ),
@@ -1485,7 +1486,7 @@ class PatientRenalInfo extends StatelessWidget {
         const Row(
           children: [
             SizedBoxW(width: 10),
-            Text(
+            AutoSizeText(
               'Antimicrobial Therapy',
               style: TextStyle(fontWeight: FontWeight.bold, color: kGreen),
             ),
@@ -1502,39 +1503,39 @@ class PatientRenalInfo extends StatelessWidget {
             minWidth: 500,
             columns: const [
               DataColumn2(
-                label: Text('Antibiotic',
+                label: AutoSizeText('Antibiotic',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 size: ColumnSize.L,
               ),
               DataColumn(
-                label: Text('Route',
+                label: AutoSizeText('Route',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Dose',
+                label: AutoSizeText('Dose',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Start',
+                label: AutoSizeText('Start',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Stop',
+                label: AutoSizeText('Stop',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
               ),
               DataColumn(
-                label: Text('Duration',
+                label: AutoSizeText('Duration',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
               ),
               DataColumn(
-                label: Text('Indication',
+                label: AutoSizeText('Indication',
                     style: TextStyle(
                         fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
                 //numeric: true,
@@ -1547,13 +1548,13 @@ class PatientRenalInfo extends StatelessWidget {
                   //bool selected = selectedIds.contains(item['mrn']);
                 },
                 cells: [
-                  DataCell(Text(item['Antibiotic'])),
-                  DataCell(Text(item['Route'])),
-                  DataCell(Text(item['Dose'])),
-                  DataCell(Text(item['Start'])),
-                  DataCell(Text(item['Stop'])),
-                  DataCell(Text(item['Duration'])),
-                  DataCell(Text(item['Indication'])),
+                  DataCell(AutoSizeText(item['Antibiotic'])),
+                  DataCell(AutoSizeText(item['Route'])),
+                  DataCell(AutoSizeText(item['Dose'])),
+                  DataCell(AutoSizeText(item['Start'])),
+                  DataCell(AutoSizeText(item['Stop'])),
+                  DataCell(AutoSizeText(item['Duration'])),
+                  DataCell(AutoSizeText(item['Indication'])),
                 ],
               );
             }).toList(),
@@ -1562,7 +1563,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Summary',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1578,7 +1579,7 @@ class PatientRenalInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                       'Mr Khan was admitted to Croydon University Hospital on the 07.11.23 with a lower respiratory tract infection. He was commenced on Amoxicillin IV 1g TDS and Clarithromycin 500mg BD as well as being a single dose of Amikacin. Over the past 48 hours, his condition has not improved and he is remains febrile and haemodynamically unstable. His blood results are not improving and his chest x-ray shows evidence of dense consolidation. Of note he has no positive Microbiology results. His conditions continues to deteriorate.'),
                 ],
               ),
@@ -1586,7 +1587,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Action',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1607,7 +1608,7 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Suggestion',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1623,7 +1624,7 @@ class PatientRenalInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                       'Given that this patient is deteriorating and is persistently febrile, blood cultures should be repeated as well as an escalation in the antibiotic therapy from Amoxicillin and Clarithromycin to Piperacillin-Tazobactam and Clarithromycin. Continue to monitor the patient for the next 48 hours and discuss with Microbiology if no improvement.'),
                 ],
               ),
@@ -1645,7 +1646,7 @@ class PatientAfebrileInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Patient Details',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1663,48 +1664,48 @@ class PatientAfebrileInfo extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text('Name: ',
+                      AutoSizeText('Name: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Muhammad Khan'),
+                      AutoSizeText('Muhammad Khan'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Number: ',
+                      AutoSizeText('Number: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('123456'),
+                      AutoSizeText('123456'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Age/Sex: ',
+                      AutoSizeText('Age/Sex: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('62 year old male'),
+                      AutoSizeText('62 year old male'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Type: ',
+                      AutoSizeText('Admission Type: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Emergency Admission'),
+                      AutoSizeText('Emergency Admission'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Date: ',
+                      AutoSizeText('Admission Date: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('7th November 2023'),
+                      AutoSizeText('7th November 2023'),
                       Spacer(),
-                      Text('Day 8'),
+                      AutoSizeText('Day 8'),
                       SizedBoxW(width: 20),
                     ],
                   ),
@@ -1714,7 +1715,7 @@ class PatientAfebrileInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Admission Clerking',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1730,70 +1731,70 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     'PC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Cough, fever, sweating and sob\n'),
-                  Text(
+                  AutoSizeText('Cough, fever, sweating and sob\n'),
+                  AutoSizeText(
                     'HPC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Muhammad presented with a three day history of feeling unwell, becoming increasingly short of breath. He complained of some chest pain, sweating, and fevers.\n\nMuhammad recently travelled to Spain for a work-related trip where he stayed in a hotel and went swimming at the beach. He started to feel unwell about four days after returning from his trip. He has a slight cough, which is productive of green sputum. He feels tired and has had a fever and been sweating. He has no headache, nausea or vomiting.\n\nHe drank only bottled water in Spain and ate at a number of restaurants. He denies any diarrhoea or pr bleeding. Of note, he travelled with his wife and children and none of them are unwell.\n'),
-                  Text(
+                  AutoSizeText(
                     'PMH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Asthma\n'),
-                  Text(
+                  AutoSizeText('Asthma\n'),
+                  AutoSizeText(
                     'Allergies:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('NKDA\n'),
-                  Text(
+                  AutoSizeText('NKDA\n'),
+                  AutoSizeText(
                     'DH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Salbutamol 2 puffs BD prn\n'),
-                  Text(
+                  AutoSizeText('Salbutamol 2 puffs BD prn\n'),
+                  AutoSizeText(
                     'SH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Works as an accountant\nLives with his wife and three children\nIndependent of ADLs\nSmokes 5 cigarettes per day\nETOH none\n'),
-                  Text(
+                  AutoSizeText(
                     'OE:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Temp: 38.2\nHR: 105\nBP: 105/86\nRR: 24\nSats: 91% on 4 litres nasal cannulae\n\nResp:\nCrackles at the right mid-zone\n\nCVS\nHeart sounds normal\n'),
-                  Text(
+                  AutoSizeText(
                     'DD:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Pneumonia\nAtypical infection\nLegionella\n'),
-                  Text(
+                  AutoSizeText('Pneumonia\nAtypical infection\nLegionella\n'),
+                  AutoSizeText(
                     'Plan:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Pneumonia\nAtypical infection\nLegionella'),
+                  AutoSizeText('Pneumonia\nAtypical infection\nLegionella'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Blood Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1809,18 +1810,18 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Microbiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1836,18 +1837,18 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Radiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1863,18 +1864,18 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Antimicrobial Therapy',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1890,18 +1891,18 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Summary',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1917,18 +1918,18 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Response',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -1944,15 +1945,15 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
                   Row(
                     children: [
-                      Text('7th November 2023'),
+                      AutoSizeText('7th November 2023'),
                       Spacer(),
-                      Text('Day 8'),
+                      AutoSizeText('Day 8'),
                     ],
                   ),
                 ],
@@ -1970,11 +1971,11 @@ class PatientAfebrileInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
@@ -1994,7 +1995,7 @@ class PatientOralSwitchInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Patient Details',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2012,48 +2013,48 @@ class PatientOralSwitchInfo extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Text('Name: ',
+                      AutoSizeText('Name: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Muhammad Khan'),
+                      AutoSizeText('Muhammad Khan'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Number: ',
+                      AutoSizeText('Number: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('123456'),
+                      AutoSizeText('123456'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Age/Sex: ',
+                      AutoSizeText('Age/Sex: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('62 year old male'),
+                      AutoSizeText('62 year old male'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Type: ',
+                      AutoSizeText('Admission Type: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('Emergency Admission'),
+                      AutoSizeText('Emergency Admission'),
                     ],
                   ),
                   SizedBoxH(height: 5),
                   Row(
                     children: [
-                      Text('Admission Date: ',
+                      AutoSizeText('Admission Date: ',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: kGreen)),
-                      Text('7th November 2023'),
+                      AutoSizeText('7th November 2023'),
                       Spacer(),
-                      Text('Day 8'),
+                      AutoSizeText('Day 8'),
                       SizedBoxW(width: 20),
                     ],
                   ),
@@ -2063,7 +2064,7 @@ class PatientOralSwitchInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Admission Clerking',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2079,70 +2080,70 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  AutoSizeText(
                     'PC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Cough, fever, sweating and sob\n'),
-                  Text(
+                  AutoSizeText('Cough, fever, sweating and sob\n'),
+                  AutoSizeText(
                     'HPC:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Muhammad presented with a three day history of feeling unwell, becoming increasingly short of breath. He complained of some chest pain, sweating, and fevers.\n\nMuhammad recently travelled to Spain for a work-related trip where he stayed in a hotel and went swimming at the beach. He started to feel unwell about four days after returning from his trip. He has a slight cough, which is productive of green sputum. He feels tired and has had a fever and been sweating. He has no headache, nausea or vomiting.\n\nHe drank only bottled water in Spain and ate at a number of restaurants. He denies any diarrhoea or pr bleeding. Of note, he travelled with his wife and children and none of them are unwell.\n'),
-                  Text(
+                  AutoSizeText(
                     'PMH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Asthma\n'),
-                  Text(
+                  AutoSizeText('Asthma\n'),
+                  AutoSizeText(
                     'Allergies:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('NKDA\n'),
-                  Text(
+                  AutoSizeText('NKDA\n'),
+                  AutoSizeText(
                     'DH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Salbutamol 2 puffs BD prn\n'),
-                  Text(
+                  AutoSizeText('Salbutamol 2 puffs BD prn\n'),
+                  AutoSizeText(
                     'SH:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Works as an accountant\nLives with his wife and three children\nIndependent of ADLs\nSmokes 5 cigarettes per day\nETOH none\n'),
-                  Text(
+                  AutoSizeText(
                     'OE:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text(
+                  AutoSizeText(
                       'Temp: 38.2\nHR: 105\nBP: 105/86\nRR: 24\nSats: 91% on 4 litres nasal cannulae\n\nResp:\nCrackles at the right mid-zone\n\nCVS\nHeart sounds normal\n'),
-                  Text(
+                  AutoSizeText(
                     'DD:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Pneumonia\nAtypical infection\nLegionella\n'),
-                  Text(
+                  AutoSizeText('Pneumonia\nAtypical infection\nLegionella\n'),
+                  AutoSizeText(
                     'Plan:\n',
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  Text('Pneumonia\nAtypical infection\nLegionella'),
+                  AutoSizeText('Pneumonia\nAtypical infection\nLegionella'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Blood Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2158,18 +2159,18 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Microbiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2185,18 +2186,18 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Radiology Results',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2212,18 +2213,18 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Antimicrobial Therapy',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2239,18 +2240,18 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Summary',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2266,18 +2267,18 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const Text(
+        const AutoSizeText(
           'Response',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
@@ -2293,15 +2294,15 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
                   Row(
                     children: [
-                      Text('7th November 2023'),
+                      AutoSizeText('7th November 2023'),
                       Spacer(),
-                      Text('Day 8'),
+                      AutoSizeText('Day 8'),
                     ],
                   ),
                 ],
@@ -2319,11 +2320,11 @@ class PatientOralSwitchInfo extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Muhammad Khan'),
-                  Text('123456'),
-                  Text('62 year old male'),
-                  Text('Emergency Admission'),
-                  Text('20th November 2022'),
+                  AutoSizeText('Muhammad Khan'),
+                  AutoSizeText('123456'),
+                  AutoSizeText('62 year old male'),
+                  AutoSizeText('Emergency Admission'),
+                  AutoSizeText('20th November 2022'),
                 ],
               ),
             )),
