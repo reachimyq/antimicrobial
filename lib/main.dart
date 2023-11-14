@@ -979,13 +979,20 @@ class _MyHomeState extends State<MyHome> {
                                 height:
                                     MediaQuery.of(context).size.height * 0.02,
                               ),
-                              const Center(
-                                child: AutoSizeText('+ manage',
-                                    style: TextStyle(
-                                        color: kWhite,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica',
-                                        fontWeight: FontWeight.w500)),
+                              Center(
+                                child: Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.04,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: const AutoSizeText('+ manage',
+                                      style: TextStyle(
+                                          color: kWhite,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica',
+                                          fontWeight: FontWeight.w500)),
+                                ),
                               ),
                             ],
                           ),
@@ -1015,13 +1022,20 @@ class _MyHomeState extends State<MyHome> {
                                 height:
                                     MediaQuery.of(context).size.height * 0.02,
                               ),
-                              const Center(
-                                child: AutoSizeText('default',
-                                    style: TextStyle(
-                                        color: kWhite,
-                                        fontSize: 16,
-                                        fontFamily: 'Helvetica',
-                                        fontWeight: FontWeight.w500)),
+                              Center(
+                                child: Container(
+                                  //color: Colors.orange,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.028,
+                                  height: MediaQuery.of(context).size.height *
+                                      0.025,
+                                  child: const AutoSizeText('default',
+                                      style: TextStyle(
+                                          color: kWhite,
+                                          fontSize: 16,
+                                          fontFamily: 'Helvetica',
+                                          fontWeight: FontWeight.w500)),
+                                ),
                               ),
                             ],
                           ),

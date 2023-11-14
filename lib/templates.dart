@@ -218,18 +218,28 @@ class InfoTemplate extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              AutoSizeText(title,
-                  style: TextStyle(
-                      color: colour,
-                      fontSize: 15,
-                      fontFamily: 'Helvetica',
-                      fontWeight: FontWeight.bold)),
+              Container(
+                //color: Colors.orange,
+                width: MediaQuery.of(context).size.width * 0.075,
+                height: MediaQuery.of(context).size.height * 0.025,
+                child: AutoSizeText(title,
+                    style: TextStyle(
+                        color: colour,
+                        fontSize: 15,
+                        fontFamily: 'Helvetica',
+                        fontWeight: FontWeight.bold)),
+              ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              AutoSizeText('$number',
-                  style: const TextStyle(
-                      color: kBlack, fontSize: 25, fontFamily: 'Helvetica')),
+              Container(
+                //color: Colors.orange,
+                width: MediaQuery.of(context).size.width * 0.024,
+                height: MediaQuery.of(context).size.height * 0.035,
+                child: AutoSizeText('$number',
+                    style: const TextStyle(
+                        color: kBlack, fontSize: 25, fontFamily: 'Helvetica')),
+              ),
             ],
           ),
         ],
@@ -1225,7 +1235,8 @@ class PatientRenalInfo extends StatelessWidget {
                     style:
                         TextStyle(fontWeight: FontWeight.w600, color: kGreen),
                   ),
-                  AutoSizeText('Antibiotics\nIV Fluids\nUSS Abdomen\nMonitor LFTs\n'),
+                  AutoSizeText(
+                      'Antibiotics\nIV Fluids\nUSS Abdomen\nMonitor LFTs\n'),
                 ],
               ),
             )),
