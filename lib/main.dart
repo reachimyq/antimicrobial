@@ -1240,15 +1240,28 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const AutoSizeText(
-                                                    '12',
-                                                    style: TextStyle(
-                                                        color: kdarkYellow,
-                                                        fontSize: 24,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontFamily:
-                                                            'Helvetica'),
+                                                  Container(
+                                                    //color: Colors.orange,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            0.015,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            0.035,
+                                                    child: const AutoSizeText(
+                                                      '12',
+                                                      style: TextStyle(
+                                                          color: kdarkYellow,
+                                                          fontSize: 24,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontFamily:
+                                                              'Helvetica'),
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -1268,15 +1281,30 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const AutoSizeText(
-                                                        'Unwell',
-                                                        style: TextStyle(
-                                                            color: kdarkGrey,
-                                                            fontSize: 18,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontFamily:
-                                                                'Helvetica'),
+                                                      Container(
+                                                        //color: Colors.orange,
+                                                        width: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .width *
+                                                            0.03,
+                                                        height: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .height *
+                                                            0.028,
+                                                        child:
+                                                            const AutoSizeText(
+                                                          'Unwell',
+                                                          style: TextStyle(
+                                                              color: kdarkGrey,
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontFamily:
+                                                                  'Helvetica'),
+                                                        ),
                                                       ),
                                                       SizedBox(
                                                         width: MediaQuery.of(
@@ -1514,15 +1542,28 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const AutoSizeText(
-                                                      'Patient remains unwell after 48 hours of antimicrobial therapy',
-                                                      style: TextStyle(
-                                                          color: kdarkGrey,
-                                                          fontSize: 12,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontFamily:
-                                                              'Helvetica'),
+                                                    child: Container(
+                                                      //color: Colors.orange,
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              0.1,
+                                                      height:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .height *
+                                                              0.05,
+                                                      child: const AutoSizeText(
+                                                        'Patient remains unwell after 48 hours of antimicrobial therapy',
+                                                        style: TextStyle(
+                                                            color: kdarkGrey,
+                                                            fontSize: 12,
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontFamily:
+                                                                'Helvetica'),
+                                                      ),
                                                     ),
                                                   )
                                                 ],
@@ -1583,14 +1624,26 @@ class _MyHomeState extends State<MyHome> {
                                                       (5 / 1180),
                                                 ),
                                                 // Number
-                                                const AutoSizeText(
-                                                  '14',
-                                                  style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 24,
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontFamily: 'Helvetica'),
+                                                Container(
+                                                  //color: Colors.orange,
+                                                  width: MediaQuery.of(context)
+                                                          .size
+                                                          .width *
+                                                      0.015,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height *
+                                                      0.035,
+                                                  child: const AutoSizeText(
+                                                    '14',
+                                                    style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontSize: 24,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontFamily:
+                                                            'Helvetica'),
+                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -1609,15 +1662,28 @@ class _MyHomeState extends State<MyHome> {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   children: [
-                                                    const AutoSizeText(
-                                                      'Renal',
-                                                      style: TextStyle(
-                                                          color: kdarkGrey,
-                                                          fontSize: 18,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                          fontFamily:
-                                                              'Helvetica'),
+                                                    Container(
+                                                      //color: Colors.orange,
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              0.028,
+                                                      height:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .height *
+                                                              0.028,
+                                                      child: const AutoSizeText(
+                                                        'Renal',
+                                                        style: TextStyle(
+                                                            color: kdarkGrey,
+                                                            fontSize: 18,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                            fontFamily:
+                                                                'Helvetica'),
+                                                      ),
                                                     ),
                                                     SizedBox(
                                                       width:
@@ -1855,15 +1921,28 @@ class _MyHomeState extends State<MyHome> {
                                                           .size
                                                           .height *
                                                       (40 / 1180),
-                                                  child: const AutoSizeText(
-                                                    'On nephrotoxic antimicrobials with declining eGFR',
-                                                    style: TextStyle(
-                                                        color: kdarkGrey,
-                                                        fontSize: 12,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        fontFamily:
-                                                            'Helvetica'),
+                                                  child: Container(
+                                                    //color: Colors.orange,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            0.1,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            0.05,
+                                                    child: const AutoSizeText(
+                                                      'On nephrotoxic antimicrobials with declining eGFR',
+                                                      style: TextStyle(
+                                                          color: kdarkGrey,
+                                                          fontSize: 12,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontFamily:
+                                                              'Helvetica'),
+                                                    ),
                                                   ),
                                                 )
                                               ],
@@ -1941,15 +2020,28 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const AutoSizeText(
-                                                    '7',
-                                                    style: TextStyle(
-                                                        color: kGreen,
-                                                        fontSize: 24,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontFamily:
-                                                            'Helvetica'),
+                                                  Container(
+                                                    //color: Colors.orange,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            0.008,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            0.035,
+                                                    child: const AutoSizeText(
+                                                      '7',
+                                                      style: TextStyle(
+                                                          color: kGreen,
+                                                          fontSize: 24,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontFamily:
+                                                              'Helvetica'),
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -1969,15 +2061,30 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const AutoSizeText(
-                                                        'Afebrile',
-                                                        style: TextStyle(
-                                                            color: kdarkGrey,
-                                                            fontSize: 18,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontFamily:
-                                                                'Helvetica'),
+                                                      Container(
+                                                        //color: Colors.orange,
+                                                        width: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .width *
+                                                            0.036,
+                                                        height: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .height *
+                                                            0.028,
+                                                        child:
+                                                            const AutoSizeText(
+                                                          'Afebrile',
+                                                          style: TextStyle(
+                                                              color: kdarkGrey,
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontFamily:
+                                                                  'Helvetica'),
+                                                        ),
                                                       ),
                                                       SizedBox(
                                                         width: MediaQuery.of(
@@ -2215,15 +2322,28 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const AutoSizeText(
-                                                      '48 hrs of antimicrobials but never had a fever',
-                                                      style: TextStyle(
-                                                          color: kdarkGrey,
-                                                          fontSize: 12,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontFamily:
-                                                              'Helvetica'),
+                                                    child: Container(
+                                                      //color: Colors.orange,
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              0.1,
+                                                      height:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .height *
+                                                              0.05,
+                                                      child: const AutoSizeText(
+                                                        '48 hrs of antimicrobials but never had a fever',
+                                                        style: TextStyle(
+                                                            color: kdarkGrey,
+                                                            fontSize: 12,
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontFamily:
+                                                                'Helvetica'),
+                                                      ),
                                                     ),
                                                   )
                                                 ],
@@ -2302,15 +2422,28 @@ class _MyHomeState extends State<MyHome> {
                                                             (5 / 1180),
                                                   ),
                                                   // Number
-                                                  const AutoSizeText(
-                                                    '11',
-                                                    style: TextStyle(
-                                                        color: klightGray,
-                                                        fontSize: 24,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontFamily:
-                                                            'Helvetica'),
+                                                  Container(
+                                                    //color: Colors.orange,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            0.015,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            0.035,
+                                                    child: const AutoSizeText(
+                                                      '11',
+                                                      style: TextStyle(
+                                                          color: klightGray,
+                                                          fontSize: 24,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontFamily:
+                                                              'Helvetica'),
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -2330,15 +2463,30 @@ class _MyHomeState extends State<MyHome> {
                                                         CrossAxisAlignment
                                                             .center,
                                                     children: [
-                                                      const AutoSizeText(
-                                                        'Oral Switch',
-                                                        style: TextStyle(
-                                                            color: kdarkGrey,
-                                                            fontSize: 18,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontFamily:
-                                                                'Helvetica'),
+                                                      Container(
+                                                        //color: Colors.orange,
+                                                        width: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .width *
+                                                            0.054,
+                                                        height: MediaQuery.of(
+                                                                    context)
+                                                                .size
+                                                                .height *
+                                                            0.028,
+                                                        child:
+                                                            const AutoSizeText(
+                                                          'Oral Switch',
+                                                          style: TextStyle(
+                                                              color: kdarkGrey,
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontFamily:
+                                                                  'Helvetica'),
+                                                        ),
                                                       ),
                                                       SizedBox(
                                                         width: MediaQuery.of(
@@ -2576,15 +2724,28 @@ class _MyHomeState extends State<MyHome> {
                                                                 .size
                                                                 .height *
                                                             (40 / 1180),
-                                                    child: const AutoSizeText(
-                                                      'Patient on intravenous antibiotics suitable for oral switch',
-                                                      style: TextStyle(
-                                                          color: kdarkGrey,
-                                                          fontSize: 12,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontFamily:
-                                                              'Helvetica'),
+                                                    child: Container(
+                                                      //color: Colors.orange,
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              0.1,
+                                                      height:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .height *
+                                                              0.05,
+                                                      child: const AutoSizeText(
+                                                        'Patient on intravenous antibiotics suitable for oral switch',
+                                                        style: TextStyle(
+                                                            color: kdarkGrey,
+                                                            fontSize: 12,
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                            fontFamily:
+                                                                'Helvetica'),
+                                                      ),
                                                     ),
                                                   )
                                                 ],
