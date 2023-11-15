@@ -1096,67 +1096,83 @@ class PatientRenalInfo extends StatelessWidget {
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
-        const AutoSizeText(
-          'Patient Details',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        Container(
+          //color: Colors.orange,
+          height: MediaQuery.of(context).size.height * 0.022,
+          width: MediaQuery.of(context).size.width * 0.05,
+          child: const AutoSizeText(
+            'Patient Details',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         SizedBoxH(height: 10),
         BorderBox(
-            height: MediaQuery.of(context).size.height * 0.125,
+            height: MediaQuery.of(context).size.height * 0.12,
             width: MediaQuery.of(context).size.width * 0.07,
             colour: kLightGrey,
             lwidth: 0.5,
             curve: 6,
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.only(left: 10, top: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
-                      AutoSizeText('Name: ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, color: kGreen)),
-                      AutoSizeText('Alejandro Lopez'),
-                    ],
-                  ),
-                  SizedBoxH(height: 5),
-                  Row(
-                    children: [
-                      AutoSizeText('Number: ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, color: kGreen)),
-                      AutoSizeText('557692'),
-                    ],
-                  ),
-                  SizedBoxH(height: 5),
-                  Row(
-                    children: [
-                      AutoSizeText('Age/Sex: ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, color: kGreen)),
-                      AutoSizeText('39 year old male'),
-                    ],
-                  ),
-                  SizedBoxH(height: 5),
-                  Row(
-                    children: [
-                      AutoSizeText('Admission Type: ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, color: kGreen)),
-                      AutoSizeText('Emergency Admission'),
-                    ],
-                  ),
-                  SizedBoxH(height: 5),
-                  Row(
-                    children: [
-                      AutoSizeText('Admission Date: ',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, color: kGreen)),
-                      AutoSizeText('15th October 2023'),
-                      Spacer(),
-                      AutoSizeText('Day 30'),
-                      SizedBoxW(width: 20),
+                      Container(
+                        //color: Colors.orange,
+                        height: MediaQuery.of(context).size.height * 0.12,
+                        width: MediaQuery.of(context).size.width * 0.125,
+                        child: const AutoSizeText.rich(
+                          TextSpan(children: [
+                            TextSpan(
+                                text: 'Name: ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: kGreen)),
+                            TextSpan(
+                              text: 'Alejandro Lopez\n',
+                              //style: TextStyle(color: Colors.blue)),
+                            ),
+                            TextSpan(
+                                text: 'Number: ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: kGreen)),
+                            TextSpan(
+                              text: '557692\n',
+                              //style: TextStyle(color: Colors.blue)),
+                            ),
+                            TextSpan(
+                                text: 'Age/Sex: ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: kGreen)),
+                            TextSpan(
+                              text: '39 year old male\n',
+                              //style: TextStyle(color: Colors.blue)),
+                            ),
+                            TextSpan(
+                                text: 'Admission Type: ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: kGreen)),
+                            TextSpan(
+                              text: 'Emergency Admission\n',
+                              //style: TextStyle(color: Colors.blue)),
+                            ),
+                            TextSpan(
+                                text: 'Admission Date: ',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: kGreen)),
+                            TextSpan(
+                              text: '15th October 2023\n',
+                              //style: TextStyle(color: Colors.blue)),
+                            ),
+                          ]),
+                        ),
+                      ),
                     ],
                   ),
                 ],

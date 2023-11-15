@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           useMaterial3: true,
         ),
-        home: Scaffold(body: MyHome()));
+        home: Scaffold(body: Prescribing()));
   }
 }
 
@@ -1382,13 +1382,13 @@ class _MyHomeState extends State<MyHome> {
                                                                                     Column(
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
-                                                                                        const AutoSizeText('Unwell', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica')),
+                                                                                        Container(height: MediaQuery.of(context).size.height * 0.025, width: MediaQuery.of(context).size.width * 0.03, child: const AutoSizeText('Unwell', style: TextStyle(color: kGreen, fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Helvetica'))),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
                                                                                         ),
                                                                                         SizedBox(
                                                                                           width: MediaQuery.of(context).size.width * 0.35,
-                                                                                          child: const AutoSizeText('The following patients have been on antibiotics for more than 48 hours and they remain febrile on a static or increasing trend +/- haemodynamically unstable', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica')),
+                                                                                          child: Container(height: MediaQuery.of(context).size.height * 0.037, width: MediaQuery.of(context).size.width * 0.4, child: const AutoSizeText('The following patients have been on antibiotics for more than 48 hours and they remain febrile on a static or increasing trend +/- haemodynamically unstable', style: TextStyle(color: kdarkGrey, fontSize: 12, fontWeight: FontWeight.w400, fontFamily: 'Helvetica'))),
                                                                                         ),
                                                                                         SizedBox(
                                                                                           height: MediaQuery.of(context).size.height * 0.025,
@@ -1415,22 +1415,22 @@ class _MyHomeState extends State<MyHome> {
                                                                                                     columnSpacing: 12,
                                                                                                     horizontalMargin: 12,
                                                                                                     minWidth: 600,
-                                                                                                    columns: const [
+                                                                                                    columns: [
                                                                                                       DataColumn2(
-                                                                                                        label: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: Container(height: MediaQuery.of(context).size.height * 0.022, width: MediaQuery.of(context).size.width * 0.018, child: AutoSizeText('MRN', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica'))),
                                                                                                         size: ColumnSize.L,
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: Container(height: MediaQuery.of(context).size.height * 0.022, width: MediaQuery.of(context).size.width * 0.02, child: AutoSizeText('Name', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica'))),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: Container(height: MediaQuery.of(context).size.height * 0.022, width: MediaQuery.of(context).size.width * 0.03, child: AutoSizeText('Location', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica'))),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: Container(height: MediaQuery.of(context).size.height * 0.022, width: MediaQuery.of(context).size.width * 0.018, child: AutoSizeText('Bed', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica'))),
                                                                                                       ),
                                                                                                       DataColumn(
-                                                                                                        label: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica')),
+                                                                                                        label: Container(height: MediaQuery.of(context).size.height * 0.022, width: MediaQuery.of(context).size.width * 0.028, child: AutoSizeText('Duration', style: TextStyle(fontWeight: FontWeight.w600, fontFamily: 'Helvetica'))),
                                                                                                         //numeric: true,
                                                                                                       ),
                                                                                                     ],
@@ -1476,11 +1476,11 @@ class _MyHomeState extends State<MyHome> {
                                                                                                           });
                                                                                                         },
                                                                                                         cells: [
-                                                                                                          DataCell(AutoSizeText('${item['mrn']}')),
-                                                                                                          DataCell(AutoSizeText(item['name'])),
-                                                                                                          DataCell(AutoSizeText('${item['location']}')),
-                                                                                                          DataCell(AutoSizeText('${item['bed']}')),
-                                                                                                          DataCell(AutoSizeText('${item['duration']}')),
+                                                                                                          DataCell(Container(height: MediaQuery.of(context).size.height * 0.025, width: MediaQuery.of(context).size.width * 0.03, child: AutoSizeText('${item['mrn']}'))),
+                                                                                                          DataCell(Container(height: MediaQuery.of(context).size.height * 0.035, width: MediaQuery.of(context).size.width * 0.045, child: AutoSizeText(item['name']))),
+                                                                                                          DataCell(Container(height: MediaQuery.of(context).size.height * 0.025, width: MediaQuery.of(context).size.width * 0.05, child: AutoSizeText('${item['location']}'))),
+                                                                                                          DataCell(Container(height: MediaQuery.of(context).size.height * 0.025, width: MediaQuery.of(context).size.width * 0.015, child: AutoSizeText('${item['bed']}'))),
+                                                                                                          DataCell(Container(height: MediaQuery.of(context).size.height * 0.025, width: MediaQuery.of(context).size.width * 0.015, child: AutoSizeText('${item['duration']}'))),
                                                                                                         ],
                                                                                                       );
                                                                                                     }).toList(),
@@ -1530,7 +1530,11 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
+                                                            child: Icon(
+                                                              Icons.arrow_right,
+                                                              color:
+                                                                  Colors.white,
+                                                            ),
                                                           ),
                                                         );
                                                       }),
@@ -1901,7 +1905,10 @@ class _MyHomeState extends State<MyHome> {
                                                                       .resolveWith(
                                                                           (states) =>
                                                                               kdarkGrey)),
-                                                          child: Icon(Icons.arrow_right, color: Colors.white,),
+                                                          child: Icon(
+                                                            Icons.arrow_right,
+                                                            color: Colors.white,
+                                                          ),
                                                         ),
                                                       );
                                                     }),
@@ -1915,7 +1922,6 @@ class _MyHomeState extends State<MyHome> {
                                                 ),
                                                 // Explanation
                                                 Container(
-
                                                   child: Container(
                                                     //color: Colors.orange,
                                                     width:
@@ -2279,7 +2285,11 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
+                                                            child: Icon(
+                                                              Icons.arrow_right,
+                                                              color:
+                                                                  Colors.white,
+                                                            ),
                                                           ),
                                                         );
                                                       }),
@@ -2294,16 +2304,6 @@ class _MyHomeState extends State<MyHome> {
                                                   ),
                                                   // Explanation
                                                   Container(
-                                                    // width:
-                                                    //     MediaQuery.of(context)
-                                                    //             .size
-                                                    //             .width *
-                                                    //         (70 / 632),
-                                                    // height:
-                                                    //     MediaQuery.of(context)
-                                                    //             .size
-                                                    //             .height *
-                                                    //         (40 / 1180),
                                                     child: Container(
                                                       //color: Colors.orange,
                                                       width:
@@ -2680,7 +2680,11 @@ class _MyHomeState extends State<MyHome> {
                                                                     MaterialStateColor.resolveWith(
                                                                         (states) =>
                                                                             kdarkGrey)),
-                                                            child: Icon(Icons.arrow_right, color: Colors.white,),
+                                                            child: Icon(
+                                                              Icons.arrow_right,
+                                                              color:
+                                                                  Colors.white,
+                                                            ),
                                                           ),
                                                         );
                                                       }),
